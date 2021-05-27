@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Redirect
 } from "react-router-dom";
 
 
@@ -15,8 +15,10 @@ function App() {
   return (
     <Router>
         <Switch>
-            <Route path="/" exact component={main}/>
+            <Route path="/index" exact component={main}/>
             <Route path="/movie" exact component={movie}/>
+
+            <Redirect from="/" to="/index" />
         </Switch>
     </Router>
   );
