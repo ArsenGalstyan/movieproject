@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 
-export default class movie extends Component {
-    render() {
-        return (
-            <div>
-                film
-            </div>
-        )
-    }
+function Movie(match) {
+
+     
+    useEffect(()=>{
+        
+    }, [])
+    return (
+        <div>
+            qwe
+        </div>
+    )
 }
+
+export default Movie

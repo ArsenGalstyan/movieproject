@@ -16,7 +16,7 @@ function App() {
     <Router>
         <Switch>
             <Route path="/index" exact component={main}/>
-            <Route path="/movie" exact component={movie}/>
+            <Route path="/movie/:id" exact component={movie}/>
 
             <Redirect from="/" to="/index" />
         </Switch>
